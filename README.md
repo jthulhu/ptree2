@@ -7,7 +7,7 @@ The `ptree` crate supports output formatting due to a user-provided configuratio
 
 ```
 [dependencies]
-ptree = "0.3"
+ptree = "0.4"
 ```
 
 ## Constructing a tree
