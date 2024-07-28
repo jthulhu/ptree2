@@ -1,7 +1,7 @@
-use item::TreeItem;
-use output::{print_tree, write_tree_with};
-use print_config::PrintConfig;
-use style::Style;
+use crate::item::TreeItem;
+use crate::output::{print_tree, write_tree_with};
+use crate::print_config::PrintConfig;
+use crate::style::Style;
 
 use std::io;
 use std::borrow::Cow;

@@ -1,12 +1,13 @@
 #![warn(missing_docs)]
-#![doc(html_root_url = "https://docs.rs/ptree/0.4")]
+#![doc(html_root_url = "https://docs.rs/pptree/1.0.0")]
 
 //!
 //! Pretty-print tree-like structures
 //!
 //! ## Basic usage
 //!
-//! ```
+//! ```rust
+//! # extern crate pptree as ptree;
 //! # use std::collections::HashMap;
 //! # use std::io;
 //! # use ptree::{print_tree, TreeBuilder};
@@ -69,7 +70,8 @@
 //! Rather than construct a new tree, one can implement the
 //! [`TreeItem`] trait for a custom data structure.
 //!
-//! ```
+//! ```rust
+//! # extern crate pptree as ptree;
 //! # use std::collections::HashMap;
 //! # use std::{io, borrow::Cow};
 //! # use ptree::{print_tree, TreeItem, Style};
@@ -104,7 +106,8 @@
 //! If you want to override this, you can create your own PrintConfig
 //! and use the [`print_tree_with`] function.
 //!
-//! ```
+//! ```rust
+//! # extern crate pptree as ptree;
 //! # use std::collections::HashMap;
 //! # use std::io;
 //! # use ptree::{print_tree_with, TreeBuilder, PrintConfig};
@@ -149,13 +152,14 @@
 //! Unless [`PrintConfig::styled`] is set to [`Always`], these two functions
 //! will not use ANSI coloring and styling for the output text.
 //!
-//! ```
+//! ```rust
+//! # extern crate pptree as ptree;
 //! # use std::collections::HashMap;
 //! # use std::io;
 //! # use std::error::Error;
 //! # use std::fs::{File, remove_file};
 //! # use ptree::{write_tree, TreeBuilder};
-//! # fn main() -> Result<(), Box<Error>> {
+//! # fn main() -> Result<(), Box<dyn Error>> {
 //! // Build a tree using a TreeBuilder
 //! let tree = TreeBuilder::new("tree".to_string())
 //!     .add_empty_child("empty branch".to_string())

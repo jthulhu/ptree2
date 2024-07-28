@@ -1,4 +1,4 @@
-extern crate ptree;
+extern crate pptree as ptree;
 
 use ptree::{print_tree, TreeBuilder};
 

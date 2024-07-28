@@ -1,5 +1,4 @@
-extern crate petgraph;
-extern crate ptree;
+extern crate pptree as ptree;
 
 use petgraph::Graph;
 

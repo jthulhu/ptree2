@@ -1,4 +1,4 @@
-use item::StringItem;
+use crate::item::StringItem;
 
 ///
 /// A builder for a tree of [`StringItem`]s

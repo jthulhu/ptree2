@@ -1,11 +1,9 @@
-#[macro_use]
-extern crate lazy_static;
-extern crate ptree;
-extern crate tempfile;
+extern crate pptree as ptree;
 
 use std::env;
 use std::io::Write;
 use std::sync::Mutex;
+use lazy_static::lazy_static;
 
 lazy_static! {
     static ref ENV_MUTEX: Mutex<()> = Mutex::new(());

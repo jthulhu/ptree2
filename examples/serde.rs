@@ -1,8 +1,4 @@
-extern crate ptree;
-extern crate serde_any;
-extern crate serde_value;
-
-extern crate structopt;
+extern crate pptree as ptree;
 
 use structopt::StructOpt;
 

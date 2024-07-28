@@ -1,13 +1,24 @@
-Pretty-print tree-like structures
+# Pretty-print tree-like structures
 
-The `ptree` crate supports output formatting due to a user-provided configuration file and/or environment variables.
-![Different output styles](https://i.imgur.com/KqPUFHq.png)
+**Warning.** This is a fork of the now seemingly unmaintained crate `ptree`.  This fork has been
+created out of the need of bumping the version of the dependencies of the `ptree` crate.  This
+means that there are a few points to keep in mind:
+- The owner of this repository ("me") is *not* the author of the crate.
+- I do *not* plan to add any new features to this repository, or to maintain it any further
+  myself.  If you would like to maintain this crate, add features, or anything similar, I am
+  willing to give you ownership and/or write access to the repository.  I merely keep this
+  repository's dependencies up to date so that it's usable.
+  
+---
+
+The `ptree` crate supports output formatting due to a user-provided configuration file and/or
+environment variables.  ![Different output styles](https://i.imgur.com/KqPUFHq.png)
 
 ## Usage
 
-```
+```toml
 [dependencies]
-ptree = "0.4"
+ptree = { version = "1", package = "pptree" }
 ```
 
 ## Constructing a tree

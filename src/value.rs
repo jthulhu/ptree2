@@ -1,5 +1,5 @@
-use item::TreeItem;
-use style::Style;
+use crate::item::TreeItem;
+use crate::style::Style;
 
 use std::io;
 use std::borrow::Cow;
@@ -101,8 +101,8 @@ mod tests {
     use std::str::from_utf8;
     use super::*;
 
-    use output::write_tree_with;
-    use print_config::PrintConfig;
+    use crate::output::write_tree_with;
+    use crate::print_config::PrintConfig;
 
     use serde_any;
 

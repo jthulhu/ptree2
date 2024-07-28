@@ -10,7 +10,7 @@ use directories::BaseDirs;
 #[cfg(feature = "ansi")]
 use atty::Stream;
 
-use style::Style;
+use crate::style::Style;
 
 use std::env;
 use std::fmt::{self, Display};
@@ -115,7 +115,7 @@ impl PrintConfig {
             .merge(config::Environment::with_prefix("PTREE").separator("_"))
             .ok()?;
 
-        Some(settings.try_into().ok()?)
+        Some(settings.try_deserialize().ok()?)
     }
 
     ///
@@ -414,7 +414,7 @@ pub const UTF_CHARS_DASHED: StaticIndentChars = StaticIndentChars {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use style::Color;
+    use crate::style::Color;
 
     use std::env;
     use std::fs::{self, File};

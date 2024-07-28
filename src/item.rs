@@ -1,4 +1,4 @@
-use style::Style;
+use crate::style::Style;
 
 use std::io;
 use std::borrow::Cow;
@@ -77,8 +77,8 @@ mod tests {
     use std::str::from_utf8;
     use super::*;
 
-    use output::write_tree_with;
-    use print_config::PrintConfig;
+    use crate::output::write_tree_with;
+    use crate::print_config::PrintConfig;
 
     #[test]
     fn small_item_output() {
