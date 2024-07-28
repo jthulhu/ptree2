@@ -1,10 +1,10 @@
 [package]
-name = "pptree"
+name = "ptree2"
 version = "1.0.0"
 authors = ["Miha Čančula <miha@noughmad.eu>"]
 license = "MIT OR Apache-2.0"
 description = "Pretty-print tree-like structures"
-repository = "https://github.com/jthulhu/pptree"
+repository = "https://github.com/jthulhu/ptree2"
 keywords = ["tree", "cli", "terminal"]
 categories = ["command-line-interface"]
 readme = "README.md"

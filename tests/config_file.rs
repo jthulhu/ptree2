@@ -1,4 +1,4 @@
-extern crate pptree as ptree;
+extern crate ptree2 as ptree;
 
 use std::env;
 use std::io::Write;

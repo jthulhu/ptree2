@@ -1,5 +1,5 @@
 #![warn(missing_docs)]
-#![doc(html_root_url = "https://docs.rs/pptree/1.0.0")]
+#![doc(html_root_url = "https://docs.rs/ptree2/1.0.0")]
 
 //!
 //! Pretty-print tree-like structures
@@ -7,7 +7,7 @@
 //! ## Basic usage
 //!
 //! ```rust
-//! # extern crate pptree as ptree;
+//! # extern crate ptree2 as ptree;
 //! # use std::collections::HashMap;
 //! # use std::io;
 //! # use ptree::{print_tree, TreeBuilder};
@@ -71,7 +71,7 @@
 //! [`TreeItem`] trait for a custom data structure.
 //!
 //! ```rust
-//! # extern crate pptree as ptree;
+//! # extern crate ptree2 as ptree;
 //! # use std::collections::HashMap;
 //! # use std::{io, borrow::Cow};
 //! # use ptree::{print_tree, TreeItem, Style};
@@ -107,7 +107,7 @@
 //! and use the [`print_tree_with`] function.
 //!
 //! ```rust
-//! # extern crate pptree as ptree;
+//! # extern crate ptree2 as ptree;
 //! # use std::collections::HashMap;
 //! # use std::io;
 //! # use ptree::{print_tree_with, TreeBuilder, PrintConfig};
@@ -153,7 +153,7 @@
 //! will not use ANSI coloring and styling for the output text.
 //!
 //! ```rust
-//! # extern crate pptree as ptree;
+//! # extern crate ptree2 as ptree;
 //! # use std::collections::HashMap;
 //! # use std::io;
 //! # use std::error::Error;

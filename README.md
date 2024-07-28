@@ -1,14 +1,17 @@
 # Pretty-print tree-like structures
 
-**Warning.** This is a fork of the now seemingly unmaintained crate `ptree`.  This fork has been
-created out of the need of bumping the version of the dependencies of the `ptree` crate.  This
-means that there are a few points to keep in mind:
+**Warning.** (28 july 2024) This is a fork of the now seemingly unmaintained crate
+[`ptree`](https://gitlab.com/Noughmad/ptree/).  This fork has been created out of the need of
+bumping the version of the dependencies of the `ptree` crate.  This means that there are a few
+points to keep in mind:
 - The owner of this repository ("me") is *not* the author of the crate.
+- This fork currently offers exactly the same features and API as its original counterpart.
 - I do *not* plan to add any new features to this repository, or to maintain it any further
-  myself.  If you would like to maintain this crate, add features, or anything similar, I am
-  willing to give you ownership and/or write access to the repository.  I merely keep this
-  repository's dependencies up to date so that it's usable.
-  
+  myself.  Just keep it afloat and accept whatever sane PR anyone offers.
+- If you would like to maintain this crate, add features, or anything similar, I am willing to
+  give you ownership and/or write access to the repository and name on crates.io (if that is
+  possible).
+
 ---
 
 The `ptree` crate supports output formatting due to a user-provided configuration file and/or
@@ -18,7 +21,7 @@ environment variables.  ![Different output styles](https://i.imgur.com/KqPUFHq.p
 
 ```toml
 [dependencies]
-ptree = { version = "1", package = "pptree" }
+ptree = { version = "1", package = "ptree2" }
 ```
 
 ## Constructing a tree

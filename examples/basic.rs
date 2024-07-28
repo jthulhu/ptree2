@@ -1,4 +1,4 @@
-extern crate pptree as ptree;
+extern crate ptree2 as ptree;
 
 use ptree::{print_tree_with, Color, PrintConfig, Style, TreeBuilder, print_config::UTF_CHARS_BOLD};
 
