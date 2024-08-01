@@ -12,6 +12,10 @@ points to keep in mind:
   give you ownership and/or write access to the repository and name on crates.io (if that is
   possible).
 
+**Warning.** (1 august 2024) The author of the original crate has resumed maintaining it, and has
+updated the deprecated dependencies, so this fork doesn't have a reason to live anymore.  You should
+directly use the crate `ptree` in place of this one.
+
 ---
 
 The `ptree` crate supports output formatting due to a user-provided configuration file and/or
